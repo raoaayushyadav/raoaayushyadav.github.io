@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simplifying Medical Education for Medical Students. Academics + Spirituality.">
+    <title>Rao Aayush Yadav | Medical Education & Spirituality</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0056b3; /* Medical Trust */
+            --spirit-saffron: #ff9933; /* Spiritual Warmth */
+            --dark-text: #1a1a1a;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        .hero span {
+            color: var(--spirit-saffron);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: white;
+            margin-right: 1rem;
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--spirit-saffron);
+            color: var(--spirit-saffron);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Grid Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid transparent;
+        }
+
+        .card.med { border-top-color: var(--primary-blue); }
+        .card.spirit { border-top-color: var(--spirit-saffron); }
+
+        .card h3 { margin-bottom: 1rem; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1a1a1a;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; } /* We will add a mobile menu later */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Rao Aayush Yadav</div>
+        <div class="nav-links">
+            <a href="#academics">Academics</a>
+            <a href="#spirituality">Spirituality</a>
+            <a href="#notes">Notes Library</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Simplifying Medical Education <br> <span>Academics + Spirituality</span></h1>
+        <p>A digital learning platform for MBBS Students bridging the gap between academic excellence and inner peace. 🩺🕉</p>
+        <div>
+            <a href="#academics" class="btn btn-primary">Start Learning</a>
+            <a href="#spirituality" class="btn btn-secondary">Explore Spirituality</a>
+        </div>
+    </section>
+
+    <section class="features" id="academics">
+        <div class="card med">
+            <h3>🩺 Comprehensive Academics</h3>
+            <p>High-yield notes based on CBME curriculum. Precise, clinically relevant, and designed for university exams.</p>
+        </div>
+        <div class="card spirit">
+            <h3>🕉 Spiritual Grounding</h3>
+            <p>Practical wisdom to navigate stress. We believe a calm mind learns better and retains more.</p>
+        </div>
+        <div class="card med">
+            <h3>📚 PYQ Analysis</h3>
+            <p>10-year trend analysis for every topic. Study smart with focused, exam-oriented content.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rao Aayush Yadav. All Rights Reserved.</p>
+        <p>Guided by Shri Premanand Ji Maharaj</p>
+    </footer>
+
+</body>
+</html>
+
